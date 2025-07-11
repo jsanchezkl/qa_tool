@@ -16,6 +16,6 @@ RUN python -m playwright install --with-deps
 
 COPY . .
 
-EXPOSE 8501
+EXPOSE 8080
 
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
